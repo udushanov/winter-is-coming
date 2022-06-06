@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  background-image: url('./GoT.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: 0 auto;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: right;
+  padding-top: 5rem;
+}
+
+.inner-start {
+  width: 60%;
+}
+
+.inner {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
+.days,
+.hours, 
+.minutes,
+.seconds {
+  text-align: center;
+}
+
+@media screen and (max-width: 1120px) {
+  p {
+    font-size: 0.75em;
+  }
+
+  .inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 3rem;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  p {
+    font-size: 0.5em;
+  }
+
+  .inner {
+    font-size: 2rem;
+  }
+}
+
